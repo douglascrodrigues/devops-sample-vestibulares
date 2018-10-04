@@ -60,18 +60,5 @@ def cadastro_cursos(request):
             'year':datetime.now().year,
         })
       
-        #AQUI
-        
-def lista_de_cursos(request):
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/lista_de_cursos.html',
-        context_instance = RequestContext(request,
-        {
-            'title':'Lista de Cursos',
-            'cursos': ['ADS' , 'Sistemas de Informação', 'Administração'],
-            'year':datetime.now().year,
-        })
     )
 
