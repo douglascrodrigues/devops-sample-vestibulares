@@ -62,11 +62,11 @@ def cadastro_cursos(request):
       
         #AQUI
         
-        def Lista_de_Curso(request):
+def lista_de_cursos(request):
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/Lista_de_Curso.html',
+        'app/lista_de_cursos.html',
         context_instance = RequestContext(request,
         {
             'title':'Lista de Cursos',
